@@ -28,9 +28,9 @@
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
-				<property name="url" value="jdbc:mysql://127.0.0.1:3306/wz?characterEncoding=GBK" />
+				<property name="url" value="jdbc:mysql://47.94.169.241:3306/wz?characterEncoding=GBK" />
 				<property name="username" value="root" />
-				<property name="password" value="123456" />
+				<property name="password" value="zxx123456" />
 				<!--  服务器密码<property name="password" value="zxx123456" />-->
 			</dataSource>
 		</environment>
