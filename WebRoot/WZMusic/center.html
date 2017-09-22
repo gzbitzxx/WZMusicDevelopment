@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>我的音乐</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version." />
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/roll-ad.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/wz_index.css">
+    <link rel="stylesheet" type="text/css" href="css/center.css">
+</head>
+<body style="background:rgb(245,245,245);">
+    <div style=" width::100%;">
+        <div style="width:1080px; margin:0 auto 0;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="navbar navbar-inverse navbar-embossed" role="navigation" style="margin:0 auto 0; position:fixed; top:0; width:1080px; margin:0 auto 0px;">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">微知音乐</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="index.html">发现音乐</a></li>
+                                <li><a>我的音乐<span class="navbar-unread">1</span></a></li>
+                                <li><a href="friends.html">朋友</a></li>
+                                <li><a href="Article.html">发现文章</a></li>
+                                <li><a href="myself.html">个人中心</a></li>
+                            </ul>
+                            <form class="navbar-form navbar-right" action="#" role="search">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn"><span class="fui-search"></span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div style="float:right; margin-top:10px; font-weight:bold; font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size:16px;">
+                                <span class="fui-user"> <a href="#">欢迎幸福摩天轮</a></span>
+                            </div>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /navbar -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!--中间部分开始-->
+            <div class="wz_index_body">
+                <!--left begin-->
+                <div id="center_left">
+                    <ul class="list-group" style="font-weight:bold; font-size:14px;">
+                        <li class="list-group-item"><a href="single.html" target="openIframe">我的歌手</a></li>
+                        <li class="list-group-item"><a href="wz_mv.html" target="openIframe">我的MV</a></li>
+                        <li class="list-group-item" id="Table_Open"><a>我的音乐<span class="fui-triangle-up"></span></a></li>
+                        <li class="list-group-item" id="tongy1"><a href="love_Song.html" target="openIframe">特别喜欢</a></li>
+                        <li class="list-group-item" id="tongy2"><a href="recent.html" target="openIframe">最近</a></li>
+                        <li class="list-group-item" id="tongy3"><a href="#">轻音乐</a></li>
+                        <li class="list-group-item" id="tongy4"><a href="#">摇滚</a></li>
+                    </ul><!-- /btn-group -->
+                </div>
+                <!--left begin-->
+                <!--right begin-->
+                <div id="center_right">
+                    <iframe name="openIframe" style="width:100%; min-height:100%;" src="love_Song.html"></iframe>
+                </div>
+                <!--right begin-->
+            </div>
+            <!--中间部分结束-->
+        </div>
+        <div style="clear:both;"></div>
+
+        <!--footer-->
+        <div class="wz_index_footer" style="margin-bottom: 60px">
+            <div style="width:1080px; height:100%; background:#B1A9A9; margin:0 auto 0; ">
+                <div class="wz_index_footer_title">
+                    <p class="wz_index_footer_name">微知音乐歌曲招募</p>
+                    <p class="wz_index_footer_word">上传音乐，给你不一样的惊喜</p>
+                </div>
+                <div class="wz_index_footer_title">
+                    <p class="wz_index_footer_name">音乐人签约</p>
+                    <p class="wz_index_footer_word">我们的音乐团队，等待你的加入</p>
+                </div>
+                <div class="wz_index_footer_title">
+                    <p class="wz_index_footer_name">关于微知-客服服务 贵州大学 SRT 微知开发项目小组版权所有@2017 Coding Right</p>
+                    <p class="wz_index_footer_word"><span class="fui-location "></span>：贵州省贵阳市花溪区贵州大学北校区</p>
+                </div>
+            </div>
+        </div>
+
+        <!--底部的播放栏-->
+        <div id="zxx_doo " style="width:100%; height:60px; background:#000000; position:fixed; bottom: 0">
+            <div style="width:1080px; height:100%; margin:0 auto 0; ">
+                <div style="margin-top:12px; height:100%; float:left; ">
+                    <span style=" margin-left:15px; "> <img src="images/reverse.png " title="上一曲 " /></span>
+                    <span style="margin-left:15px; "><img src="images/pause.png " title="暂停 " /></span>
+                    <span style="margin-left:15px; "><img src="images/next.png " title="下一曲 " /></span>
+                </div>
+                <div style="float:left; ">
+                    <img src="images/images (2).jpg " height="60px " ; width="60px " ; style="margin-left:15px; " />
+                </div>
+                <div style="float:left; width:40%; height:100%; ">
+                    <p style="font-size:20px; ">当你 <samp style="font-size:5px; ">林俊杰</samp> <span style="float:right; font-size:15px; ">00:00/05:23</span></p>
+                    <div id="slider" class="ui-slider">
+                        <div class="ui-slider-segment"></div>
+                        <div class="ui-slider-segment"></div>
+                        <div class="ui-slider-segment"></div>
+                    </div>
+                </div>
+
+                <div style="float:left; width:20%; height:100%; margin-top:20px; ">
+                    <span class="fui-heart " style="margin-left:50px; margin-right:12px; "></span> | <span class="fui-mute " style="margin-left:12px; "></span>
+                </div>
+
+            </div>
+        </div>
+        <script src="dist/js/vendor/jquery.min.js "></script>
+        <script src="dist/js/vendor/video.js "></script>
+        <script src="dist/js/flat-ui.min.js "></script>
+        <script src="docs/assets/js/application.js "></script>
+        <script src="js/jquery.roll-ad.js "></script>
+
+        <script>
+            videojs.options.flash.swf = "dist/js/vendors/video-js.swf ";
+        </script>
+
+        <script type="text/jscript">
+            $(document).ready(function (e) {
+
+            });
+        </script>
+
+        <script>
+            RollAd.init($('.rollad'));
+        </script>
+
+        <script type="text/jscript">
+            $(document).ready(function () {
+
+                for (var i = 0; i < 5; i++) {
+                    $("#center_left").find("#tongy" + i).hide();
+                }
+
+                $("#Table_Open").click(function () {
+                    var text = $(this).find("a span").attr("class");
+                    if (text == 'fui-triangle-down') {
+                        $(this).find("a span").attr("class", "fui-triangle-up");
+                        for (var i = 0; i < 5; i++) {
+                            $("#center_left").find("#tongy" + i).hide("flst");
+                        }
+
+                    } else {
+                        $(this).find("a span").attr("class", "fui-triangle-down");
+                        for (var i = 0; i < 5; i++)
+                            $("#center_left").find("#tongy" + i).show("flst");
+
+                    }
+                });
+            });
+        </script>
+
+</body>
+</html>

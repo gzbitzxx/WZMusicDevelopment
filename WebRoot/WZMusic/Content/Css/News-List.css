@@ -1,0 +1,19 @@
+﻿.news-list
+{
+    padding:10px;
+}
+
+.news-list li
+{
+    line-height:30px;
+    border-bottom:1px dotted #ddd;
+    padding-left:20px;
+    background-image:url(../Images/icon.gif);
+    background-position:0 -296px;
+    background-repeat:no-repeat;
+}
+
+.news-list li span
+{
+    float:right;
+}

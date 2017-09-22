@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version." />
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content=" height = [pixel_value | device-height] ,width = [pixel_value | device-width ] , initial-scale = float_value , minimum-scale = float_value , maximum-scale = float_value , user-scalable = [yes | no] , target-densitydpi =[dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi] " />
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/roll-ad.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body style="background:rgb(245,245,245); width:100%;">
+
+    <div style="width:938px; height:600px; margin:0 auto 0;">
+        <div class="login">
+            <div class="login-screen">
+                <div class="login-icon">
+                    <img src="images/weizhi.png" width="100px" height="100px" alt="Welcome to 微知" />
+                    <h4>欢迎登陆<small> 微知</small></h4>
+                </div>
+                <div class="login-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" />
+                        <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+                        <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+                    <a class="btn btn-primary btn-lg btn-block" href="index.html">Log in</a>
+                    <a class="login-link" href="#">忘记密码？</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/vendor/jquery.min.js "></script>
+    <script src="dist/js/vendor/video.js "></script>
+    <script src="dist/js/flat-ui.min.js "></script>
+    <script src="docs/assets/js/application.js "></script>
+    <script src="js/jquery.roll-ad.js "></script>
+
+    <script>
+        videojs.options.flash.swf = "dist/js/vendors/video-js.swf ";
+    </script>
+
+    <script>
+        RollAd.init($('.rollad'));
+    </script>
+</body>
+</html>

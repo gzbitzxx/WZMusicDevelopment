@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>WZMusicDevelopment</display-name>
+	
+  <servlet id="Servlet_1501308586254">
+    <servlet-name>adminServlet</servlet-name>
+    <servlet-class>com.wz.option.listAdmin</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586210">
+    <servlet-name>updateAdmin</servlet-name>
+    <servlet-class>com.wz.option.updateAdmin</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586265">
+    <servlet-name>deleteAdmin</servlet-name>
+    <servlet-class>com.wz.option.deleteAdmin</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586275">
+    <servlet-name>addAdmin</servlet-name>
+    <servlet-class>com.wz.option.addAdmin</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586286">
+    <servlet-name>updateNewAdmin</servlet-name>
+    <servlet-class>com.wz.option.updateNewAdmin</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586297">
+    <servlet-name>addUser</servlet-name>
+    <servlet-class>com.wz.option.addUser</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586315">
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>com.wz.option.listUser</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586323">
+    <servlet-name>updateUser</servlet-name>
+    <servlet-class>com.wz.option.updateUser</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586331">
+    <servlet-name>updateNewUser</servlet-name>
+    <servlet-class>com.wz.option.updateNewUser</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586340">
+    <servlet-name>deleteUser</servlet-name>
+    <servlet-class>com.wz.option.deleteUser</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586347">
+    <servlet-name>addMusicType</servlet-name>
+    <servlet-class>com.wz.option.addMusicType</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586355">
+    <servlet-name>listMusicType</servlet-name>
+    <servlet-class>com.wz.option.listMusicType</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586364">
+    <servlet-name>updateMusicType</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wz.option.updateMusicType</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586372">
+    <servlet-name>updateNewMusicType</servlet-name>
+    <servlet-class>com.wz.option.updateNewMusicType</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586381">
+    <servlet-name>deleteMusicType</servlet-name>
+    <servlet-class>com.wz.option.deleteMusicType</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586389">
+    <servlet-name>addMusicMTY</servlet-name>
+    <servlet-class>com.wz.option.addMusicMTY</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586398">
+    <servlet-name>addMusic</servlet-name>
+    <servlet-class>com.wz.option.addMusic</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586407">
+    <servlet-name>listMusic</servlet-name>
+    <servlet-class>com.wz.option.listMusic</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586418">
+    <servlet-name>deleteMusic</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wz.option.deleteMusic</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586425">
+    <servlet-name>updateMusic</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wz.option.updateMusic</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586432">
+    <servlet-name>updateNewMusic</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wz.option.updateNewMusic</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586438">
+  	<servlet-name>addArticleMU</servlet-name>
+  	<display-name>addArticleMU</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.addArticleMU</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586445">
+  	<servlet-name>addArticle</servlet-name>
+  	<display-name>addArticle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.addArticle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586452">
+  	<servlet-name>listArticle</servlet-name>
+  	<display-name>listArticle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.listArticle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586460">
+  	<servlet-name>deleteArticles</servlet-name>
+  	<display-name>deleteArticles</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.deleteArticles</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586467">
+  	<servlet-name>updateArticle</servlet-name>
+  	<display-name>updateArticle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.updateArticle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586475">
+  	<servlet-name>updateNewArticle</servlet-name>
+  	<display-name>updateNewArticle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.updateNewArticle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1501308586481">
+  	<servlet-name>loginWZ</servlet-name>
+  	<display-name>loginWZ</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.loginWZ</servlet-class>
+  </servlet>
+   <servlet id="Servlet_1505961831522">
+    <servlet-name>addComment</servlet-name>
+    <servlet-class>com.wz.option.addComment</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831508">
+    <servlet-name>listComments</servlet-name>
+    <servlet-class>com.wz.option.listComments</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831532">
+    <servlet-name>updataComment</servlet-name>
+    <servlet-class>com.wz.option.updataComment</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831544">
+    <servlet-name>deleteComment</servlet-name>
+    <servlet-class>com.wz.option.deleteComment</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831556">
+    <servlet-name>queryComment</servlet-name>
+    <servlet-class>com.wz.option.queryComment</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831643">
+    <servlet-name>updataNewComment</servlet-name>
+    <servlet-class>com.wz.option.updataNewComment</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831655">
+  	<servlet-name>UploadServlet</servlet-name>
+  	<display-name>UploadServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.UploadServlet</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831663">
+  	<servlet-name>exitLogin</servlet-name>
+  	<display-name>exitLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.exitLogin</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831675">
+  	<servlet-name>imageServlet</servlet-name>
+  	<display-name>imageServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.imageServlet</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831686">
+  	<servlet-name>getAdminTest</servlet-name>
+  	<display-name>getAdminTest</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.getAdminTest</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831694">
+  	<servlet-name>addCommentMU</servlet-name>
+  	<display-name>addCommentMU</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.addCommentMU</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831745">
+  	<servlet-name>lands</servlet-name>
+  	<display-name>lands</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.lands</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831761">
+  	<servlet-name>exitUserLands</servlet-name>
+  	<display-name>exitUserLands</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.exitUserLands</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831769">
+  	<servlet-name>getArticle</servlet-name>
+  	<display-name>getArticle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.getArticle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831778">
+  	<servlet-name>addPageArticles</servlet-name>
+  	<display-name>addPageArticles</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.addPageArticles</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831786">
+  	<servlet-name>updatePageArcitle</servlet-name>
+  	<display-name>updatePageArcitle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.updatePageArcitle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831795">
+  	<servlet-name>updatePageArcitles</servlet-name>
+  	<display-name>updatePageArcitles</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.updatePageArcitle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831802">
+  	<servlet-name>showArticleDetail</servlet-name>
+  	<display-name>showArticleDetail</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.showArticleDetail</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831809">
+  	<servlet-name>showMyseclfArticle</servlet-name>
+  	<display-name>showMyseclfArticle</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.showMyseclfArticle</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831816">
+  	<servlet-name>index</servlet-name>
+  	<display-name>index</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.index</servlet-class>
+  </servlet>
+  <servlet id="Servlet_1505961831828">
+  	<servlet-name>playMusic</servlet-name>
+  	<display-name>playMusic</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.playMusic</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>getSpecialMusic</servlet-name>
+  	<display-name>getSpecialMusic</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.getSpecialMusic</servlet-class>
+  </servlet>
+
+  <servlet-mapping id="ServletMapping_1505961830930">
+    <servlet-name>updataNewComment</servlet-name>
+    <url-pattern>/updataNewComment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831018">
+    <servlet-name>queryComment</servlet-name>
+    <url-pattern>/queryComment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831031">
+    <servlet-name>deleteComment</servlet-name>
+    <url-pattern>/deleteComment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831041">
+    <servlet-name>updataComment</servlet-name>
+    <url-pattern>/updataComment</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping id="ServletMapping_1505961831050">
+    <servlet-name>addComment</servlet-name>
+    <url-pattern>/addComment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping id="ServletMapping_1505961831091">
+    <servlet-name>listComments</servlet-name>
+    <url-pattern>/listComments</url-pattern>
+  </servlet-mapping>
+ 
+
+
+  <servlet-mapping id="ServletMapping_1501308585999">
+    <servlet-name>adminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping id="ServletMapping_1501308586051">
+    <servlet-name>updateAdmin</servlet-name>
+    <url-pattern>/updateAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586062">
+    <servlet-name>deleteAdmin</servlet-name>
+    <url-pattern>/deleteAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586070">
+    <servlet-name>addAdmin</servlet-name>
+    <url-pattern>/addAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586076">
+    <servlet-name>updateNewAdmin</servlet-name>
+    <url-pattern>/updateNewAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586082">
+    <servlet-name>addUser</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586089">
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586095">
+    <servlet-name>updateUser</servlet-name>
+    <url-pattern>/updateUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586102">
+    <servlet-name>updateNewUser</servlet-name>
+    <url-pattern>/updateNewUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586109">
+    <servlet-name>deleteUser</servlet-name>
+    <url-pattern>/deleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586115">
+    <servlet-name>addMusicType</servlet-name>
+    <url-pattern>/addMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586121">
+    <servlet-name>listMusicType</servlet-name>
+    <url-pattern>/musicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586126">
+    <servlet-name>updateMusicType</servlet-name>
+    <url-pattern>/updateMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586131">
+    <servlet-name>updateNewMusicType</servlet-name>
+    <url-pattern>/updateNewMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586136">
+    <servlet-name>deleteMusicType</servlet-name>
+    <url-pattern>/deleteMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586141">
+    <servlet-name>addMusicMTY</servlet-name>
+    <url-pattern>/addMusicMTY</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586147">
+    <servlet-name>addMusic</servlet-name>
+    <url-pattern>/addMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586152">
+    <servlet-name>listMusic</servlet-name>
+    <url-pattern>/listMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586157">
+    <servlet-name>deleteMusic</servlet-name>
+    <url-pattern>/deleteMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586161">
+    <servlet-name>updateMusic</servlet-name>
+    <url-pattern>/updateMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586166">
+    <servlet-name>updateNewMusic</servlet-name>
+    <url-pattern>/updateNewMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586170">
+  	<servlet-name>addArticleMU</servlet-name>
+  	<url-pattern>/addArticleMU</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586174">
+  	<servlet-name>addArticle</servlet-name>
+  	<url-pattern>/addArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586179">
+  	<servlet-name>listArticle</servlet-name>
+  	<url-pattern>/listArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586183">
+  	<servlet-name>deleteArticles</servlet-name>
+  	<url-pattern>/deleteArticles</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586188">
+  	<servlet-name>updateArticle</servlet-name>
+  	<url-pattern>/updateArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586192">
+  	<servlet-name>updateNewArticle</servlet-name>
+  	<url-pattern>/updateNewArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1501308586197">
+  	<servlet-name>loginWZ</servlet-name>
+  	<url-pattern>/loginWZ</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831168">
+  	<servlet-name>UploadServlet</servlet-name>
+  	<url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831174">
+  	<servlet-name>exitLogin</servlet-name>
+  	<url-pattern>/exitLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831181">
+  	<servlet-name>imageServlet</servlet-name>
+  	<url-pattern>/imageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831188">
+  	<servlet-name>getAdminTest</servlet-name>
+  	<url-pattern>/getAdminTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831224">
+  	<servlet-name>addCommentMU</servlet-name>
+  	<url-pattern>/addCommentMU</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831229">
+  	<servlet-name>lands</servlet-name>
+  	<url-pattern>/lands</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831235">
+  	<servlet-name>exitUserLands</servlet-name>
+  	<url-pattern>/exitUserLands</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831241">
+  	<servlet-name>getArticle</servlet-name>
+  	<url-pattern>/getArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831247">
+  	<servlet-name>addPageArticles</servlet-name>
+  	<url-pattern>/addPageArticles</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831253">
+  	<servlet-name>updatePageArcitle</servlet-name>
+  	<url-pattern>/updatePageArcitle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831259">
+  	<servlet-name>updatePageArcitles</servlet-name>
+  	<url-pattern>/updatePageArcitles</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831265">
+  	<servlet-name>showArticleDetail</servlet-name>
+  	<url-pattern>/showArticleDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831270">
+  	<servlet-name>showMyseclfArticle</servlet-name>
+  	<url-pattern>/showMyseclfArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831275">
+  	<servlet-name>index</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_1505961831280">
+  	<servlet-name>playMusic</servlet-name>
+  	<url-pattern>/playMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getSpecialMusic</servlet-name>
+  	<url-pattern>/getSpecialMusic</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 配置访问的首页 -->
+	<welcome-file-list>
+		<welcome-file>Page/Iframe.jsp</welcome-file>
+	</welcome-file-list>
+	
+<!-- 配置拦截器 -->
+	<filter id="Filter_1505961831836">
+		<filter-name>login</filter-name>
+  		<filter-class>com.wz.common.LoginFilter</filter-class>
+ 	</filter>
+ 	
+	<filter-mapping>
+  		<filter-name>login</filter-name>
+  		<url-pattern>/Admin/*</url-pattern>
+ 	</filter-mapping>
+ 	 -->
+</web-app>

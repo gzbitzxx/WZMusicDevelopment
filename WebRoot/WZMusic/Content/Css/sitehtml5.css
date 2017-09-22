@@ -1,0 +1,505 @@
+﻿/*--设置网页的文本颜色、字体等--*/
+body
+{
+    font: 12px/1.5 微软雅黑, 宋体, tahoma, Srial, helvetica, sans-serif;
+    color: #444;
+}
+
+/*--去掉链接的下划线，与设置颜色--*/
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+
+/*--鼠标放在链接上时的样式--*/
+a:hover
+{
+    color: #F00;
+}
+
+/*--整个网页的容器--*/
+#container
+{
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*网页的头部*/
+header
+{
+    height: 70px;
+}
+
+#logo
+{
+    width: 181px;
+    height: 70px;
+    background: url(../Images/logo.gif) no-repeat left center;
+    float: left;
+}
+
+#search
+{
+    float: right;
+    margin-top: 30px;
+}
+
+#search-key
+{
+    width: 140px;
+    background: url(../Images/srh_bg.gif);
+    border: 1px solid #DDD;
+    padding-left: 20px;
+    margin: 0 5px;
+    vertical-align:middle;
+}
+
+#search button
+{
+    width: 58px;
+    height: 23px;
+    border:0;
+    background: url(../Images/btn_srh.gif);
+    vertical-align:middle;
+}
+
+/*导航条*/
+
+nav
+{
+    height: 65px;
+    margin-bottom: 8px;
+    position:relative;
+}
+
+nav div
+{
+    float: left;
+    height: 65px;
+    background-image: url(../Images/nav_bg.gif);
+}
+
+#nav-left
+{
+    width: 5px;
+    background-position: 0 -66px;
+}
+
+#nav-main
+{
+    width: 890px;
+}
+
+#nav-right
+{
+    width: 5px;
+    background-position: -5px -66px;
+}
+
+
+#nav-list li
+{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 5px 0;
+    padding-right: 2px;
+    width:auto;
+}
+
+#nav-list li a
+{
+    color: #fff;
+    padding: 0 0 0 20px;
+    display: block;
+    line-height: 31px;
+}
+
+#nav-list li a span
+{
+    padding-right: 20px;
+    display: block;
+}
+
+#nav-list li.navCurrent a
+{
+    background: url(../images/nav_bg.gif) 0 -132px no-repeat;
+    color: #646464;
+}
+
+#nav-list li.navCurrent a span
+{
+    background: url(../images/nav_bg.gif) right -132px no-repeat;
+}
+
+/*
+#nav-list li a:hover
+{
+    background: url(../images/nav_bg.gif) 0 -163px no-repeat;
+}
+
+#nav-list li a:hover span
+{
+    background: url(../images/nav_bg.gif) right -163px no-repeat;
+}
+*/
+
+#nav-list li ul
+{
+    position: absolute;
+    left: 10px;
+    top: 39px;
+    display: none;
+    width:800px;
+}
+
+#nav-list li.navCurrent ul
+{
+    display: block;
+}
+
+#nav-list li ul li
+{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0 5px;
+}
+
+#nav-list li ul li a, #nav-list li.navCurrent ul li a
+{
+    background-image: none;
+    width:78px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #6e6e6e;
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav-list li ul li a:hover, #nav-list li.navCurrent ul li a:hover
+{
+     background: url(../images/nav_bg.gif) 0 -198px no-repeat;
+}
+
+/*--本网页公用样式--*/
+.important-news p
+{
+    color: #999;
+}
+
+.margin-bottom
+{
+    margin-bottom: 8px;
+}
+
+/*--本网页公用样式：新闻块--*/
+.index-news
+{
+    width: 325px;
+    height: 289px;
+}
+
+.index-news h2 
+{
+    height: 30px;
+}
+
+.index-news h2 span
+{
+    background:url(../Images/Icon.gif) no-repeat;
+    padding-left:15px;
+}
+
+.index-news .important-news
+{
+    padding: 10px 15px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.index-news .important-news h3 a
+{
+    color: #05A;
+    line-height: 30px;
+}
+
+.index-news .important-news img
+{
+    float: left;
+    border: 1px solid #DDD;
+    padding: 1px;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 91px;
+    height: 70px;
+}
+
+.index-news ul
+{
+    padding: 0 15px;
+}
+
+/*--main div下的有标题与边框的div--*/
+#main .box
+{
+    border: 1px solid #DDD;
+}
+
+#main .box h2
+{
+    height: 27px;
+    background-image: url(../images/box_tit_bg.gif);
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #444;
+    line-height: 27px;
+    padding: 0 14px;
+}
+
+#main .box h2 em
+{
+    color: #DC7E1B;
+}
+
+#main .box h2 a
+{
+    float: right;
+    color: #DC7E1B;
+    font-size: 12px;
+    font-weight: normal;
+    background: url(../Images/icon.gif) no-repeat 0 -43px;
+    padding-left: 16px;
+}
+
+#main .box h2 a:hover
+{
+    background-position: 0 -93px;
+    color: #CB6D0A;
+}
+
+
+
+/*----主内容----*/
+#main
+{
+    width: 663px;
+    float: left;
+}
+
+/*--焦点图与登陆部分--*/
+#focus
+{
+    height: 255px;
+}
+
+#focus-content
+{
+    width: 266px;
+    height: 208px;
+    visibility: hidden;
+    background: green;
+}
+
+/*--热点新闻--*/
+#hot-news
+{
+    width: 356px;
+    height: 223px;
+    background: url(../Images/hot_bg.gif);
+    padding: 16px;
+}
+
+#hot-news .important-news
+{
+    height: 80px;
+    border-bottom: 1px dotted #444;
+}
+
+#hot-news .important-news h2
+{
+    font-size: 18px;
+    font-family: 微软雅黑;
+    text-align: center;
+    line-height: 40px;
+}
+
+#hot-news ul, .index-news ul
+{
+    margin-top: 8px;
+}
+
+#hot-news ul li, .index-news ul li
+{
+    height: 22px;
+    line-height: 22px;
+    background: url(../Images/Icon.gif) 0 -300px no-repeat;
+    padding-left: 20px;
+}
+
+#hot-news ul li span, .index-news ul li span
+{
+    float: right;
+    color: #579F11;
+}
+
+/*--热门产品--*/
+#main-product
+{
+    height: 290px;
+}
+
+#main-product ul
+{
+    width:645px;
+    margin:15px auto;
+}
+
+#main-product>ul
+{
+    width:635px;
+}
+
+#main-product ul li
+{
+    float: left;
+    width: 107px;
+    height: 113px;
+    text-align: center;
+    line-height: 20px;
+    margin: 5px 10px;
+}
+
+#main-product ul li img
+{
+    width: 107px;
+    height: 87px;
+}
+
+/*--侧边--*/
+#sidebar
+{
+    width: 228px;
+    float: right;
+}
+
+/*--侧边：有标题和边框的div--*/
+#sidebar .box
+{
+    background: url(../images/side_bg.gif);
+    background-position: 0 bottom;
+}
+
+#sidebar .box h2
+{
+    background: url(../images/side_bg.gif);
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+
+#sidebar .box h2 em
+{
+    color: Red;
+}
+
+/*--导购--*/
+#buy
+{
+    height: 254px;
+}
+
+#buy dl
+{
+    margin: 10px 15px;
+    background: url(../images/icon2.gif) no-repeat;
+}
+
+#buy dl dt
+{
+    font-weight: bold;
+    padding-left: 60px;
+    line-height: 25px;
+}
+
+#buy dl dd
+{
+    padding-left: 60px;
+    line-height: 25px;
+    height: 35px;
+    margin-bottom: 13px;
+    border-bottom: 1px dashed #DDD;
+}
+
+#buy dl dd.no-border
+{
+    border: 0;
+}
+
+/*--常见问题--*/
+
+#qa
+{
+    height:440px;
+}
+
+#qa dl
+{
+    margin: 10px;
+}
+
+#qa dl dt, #qa dl dd
+{
+    padding-left: 20px;
+    background-image: url(../images/icon.gif);
+    background-repeat: no-repeat;
+}
+
+#qa dl dt
+{
+    font-weight: bold;
+    line-height: 26px;
+    background-position: 0 -143px;
+}
+
+#qa dl dd
+{
+    background-position: 0 -198px;
+    border-bottom: 1px dashed #DDD;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+/*--联系我们--*/
+#link-us div
+{
+    height: 112px;
+    background: url(../images/tel.gif);
+}
+
+/*--底部导航--*/
+#nav-bottom
+{
+    line-height: 30px;
+    color: White;
+    text-align: center;
+    background-color: #AAA;
+}
+
+#nav-bottom a
+{
+    color: #FFF;
+    font-weight: bold;
+}
+
+/*--页脚--*/
+footer
+{
+    text-align: center;
+    color: #666;
+    line-height: 26px;
+}

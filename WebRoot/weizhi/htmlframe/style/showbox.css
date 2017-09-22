@@ -1,0 +1,14 @@
+.showbox {
+	width: 45%;
+	margin: 50px auto 0;
+}
+
+.showbox button {
+	width: 130px;
+	display: inline;
+}
+
+.bottombox {
+	width: 50%;
+}
+

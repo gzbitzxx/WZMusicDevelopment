@@ -1,0 +1,170 @@
+.wz_index_body{
+	width:100%;
+    margin-top:10px;
+}
+
+.wz_index_title{
+	width:70%; 
+	height:100%; 
+	border-left:2px rgb(190,190,190) solid; 
+	float:left;
+}
+
+.wz_index_head_one{
+	width:95%;
+	 height:40px;
+	 font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif;
+	 border-bottom:2px rgb(193,13,12) solid; 
+	 margin:0 auto 0;  
+	 margin-top:20px;
+}
+.wz_play{
+	width:80%; 
+	text-align:center; 
+	margin:0 auto 0
+}
+
+.wz_left{
+	float: right;
+}
+
+.wz_index_head_one_title{
+	font-weight:bold; 
+	font-size:26px;
+}
+
+.wz_margin10{
+	margin-top:10px;
+}
+
+.wz_picture_set{
+	width:30%; 
+	height:200px; 
+	float:left; 
+	margin-left:3%; 
+	text-align:center;
+}
+
+.wz_pitture_size{
+	width:200px; 
+	height:135px;
+}
+.wz_lunwen{
+	width:80%; 
+	text-align:center; 
+	font-size:14px;
+}
+
+.wz_play span{
+	float: left;
+}
+
+.wz_play a{
+	margin-right:1px;
+}
+
+.wz_music_play span{
+	float:right; 
+	margin-right:20px;
+}
+
+.wz_right_part{
+	width:28%; 
+	height:800px;
+	float:right;
+}
+.wz_right_part_mysef{
+	height:150px; 
+	width:100%; 
+	background:#DBDBDB;
+}
+.wz_right_world{
+	color:#E58314; 
+	margin-top:30px;
+}
+
+.wz_right_world2{
+	width:32%; 
+	text-align:center; 
+	float:left; 
+	color:#F8F8F8;
+}
+
+.wz_right_world3{
+	color:#E58314; 
+	margin-top:30px; 
+	border:2px #919191 solid; 
+	border-radius:5px; 
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.wz_right_world4{
+	border-bottom:2px #B5B5B5 solid; 
+	height:40px; 
+	margin:0 auto 0;
+}
+
+.wz_right_world4_look{
+	float:right; 
+	margin-top:15px;
+}
+
+.wz_right_world4_singer{
+	margin:0 auto 0;
+	width:95%; 
+	height:100px; 
+	margin-top:20px; 
+	background:#DBDBDB;
+}
+
+.wz_right_world4_singe_pic{
+	float:left; 
+	height:99px; 
+	width:90px; 
+}
+.wz_right_world5_singer{
+	text-align:center;
+	float:left;
+	margin:0 auto 0;
+	width:30%; 
+	height:100px; 
+	margin-top:20px; 
+}
+
+.wz_right_world5_singe_pic{
+	margin:0 auto 0;
+	height:150px; 
+	width:230px; 
+}
+
+.wz_right_world4_singe_name{
+	margin-bottom:30px; 
+	margin-top:10px; 
+}
+
+.wz_right_world4_singe_btn{
+	margin-bottom:30px; 
+	margin-top:10px; 
+}
+.wz_index_footer{
+	border-top:1px #000000 solid; 
+	height:100px; 
+	width:100%; 
+	color:#F9F9F9; 
+	background:#B1A9A9;
+}
+.wz_index_footer_name{
+	font-size:10px; 
+	margin-top:20px; 
+}
+.wz_index_footer_word{
+	font-size:10px;
+	margin-top:10px; 
+}
+
+.wz_index_footer_title{
+	width:30%; 
+	float:left; 
+	margin-left:3%; 
+}

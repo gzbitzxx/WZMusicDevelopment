@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+.singel_name{
+	font:"Lucida Console", Monaco, monospace;
+	font-weight:bold;
+	font-size:14px;
+	margin-top:10px;
+	}

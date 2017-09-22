@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.MusicTypeDao">
+	<select id="queryMusicTypes" parameterType="MusicTypeDto" resultType="com.wz.dto.MusicTypeDto"
+		useCache="false">
+	    <![CDATA[
+		select * from musictype t where t.id = #{id}
+		]]>
+	</select>
+	
+	<select id="getMusicTypes" parameterType="int" resultType="MusicTypeDto"
+		useCache="false">
+	    <![CDATA[
+		select * from musictype where 1=1
+		]]>
+	</select>
+	
+		<!-- 分页 -->
+	<select id="getMusicTypePage" parameterType="com.wz.dto.Page" resultType="MusicTypeDto"
+		useCache="false">
+	    <![CDATA[
+		select * from musictype limit #{currentPage},#{pageSize}
+		]]>
+	</select>
+	
+	<insert id="insertMusicType" parameterType="MusicTypeDto" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO musictype(id,typeName,OrderNumber) 
+			VALUES
+			(#{id},#{typeName},#{orderNumber})
+		]]>
+	</insert>
+	
+	<update id="updateMusicType" parameterType="MusicTypeDto" >
+		update musictype set typeName=#{typeName},
+		OrderNumber=#{orderNumber} where id=#{id}
+	</update>
+	
+	<delete id="delectMusicType" parameterType="MusicTypeDto">
+		delete from musictype where id=#{id} 
+	</delete>
+</mapper>

@@ -1,0 +1,39 @@
+﻿/*--所有网页里通用的样式--*/
+.clearfix:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix
+{
+    display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clearfix
+{
+    height: 1%;
+}
+
+.clearfix
+{
+    display: block;
+    zoom:1;
+}
+/* End hide from IE-mac */
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}

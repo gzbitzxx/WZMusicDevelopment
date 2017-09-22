@@ -1,0 +1,21 @@
+﻿#product-list li
+{
+    width:157px;
+    float:left;
+    overflow:hidden;
+    text-align:center;
+    margin:4px;
+    background:#666;
+    display:inline; /*修复IE6双倍MARGIN问题*/
+}
+
+#product-list li a
+{
+    color:White;
+}
+
+#product-list li img
+{
+    width:157px;
+    height:118px;
+}

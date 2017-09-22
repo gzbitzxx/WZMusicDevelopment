@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>微知音乐</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version." />
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/roll-ad.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/wz_index.css">
+    <link rel="stylesheet" href="../bdPlay/src/css/smusic.css" />
+    
+    <link href="weizhi/htmlframe/plugings/layui/css/layui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="weizhi/htmlframe/plugings/bootstrap/css/site.min.css" />
+    <link rel="stylesheet" href="weizhi/htmlframe/style/hui.css" />
+    
+</head>
+<body style="background:rgb(245,245,245);">
+    <div style=" width:100%; ">
+        <div style="width:1080px; margin:0 auto 0;">
+        	<!-- 标题栏结束-->
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="navbar navbar-inverse navbar-embossed" role="navigation" style="margin:0 auto 0;">
+                        <div class="navbar-header">
+                            <a class="navbar-brand">微知音乐</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a>发现音乐<span class="navbar-unread">1</span></a></li>
+                                <li><a href="center.html">我的音乐</a></li>
+                                <li><a href="friends.html">朋友</a></li>
+                                <li><a href="Article.html">发现文章</a></li>
+                                <li><a href="myself.html">个人中心</a></li>
+                            </ul>
+                            <form class="navbar-form navbar-right" action="#" role="search">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn"><span class="fui-search"></span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div style="float:right; margin-top: 10px;">
+                                <!--管理员开始-->
+							        <ul class="hui-top-nav-right-usr">
+							            <li class="dropdown">
+							                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#" id="dLabel">
+							                    <span class="fui-user"><i class="iconfont icon-touxiang">用户名</i></span>
+							                    <b class="caret"></b>
+							                </a>
+							                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							                    <li role="presentation ">
+							                        <a href="#">
+							                            <i class="fa fa-user"></i> 个人信息
+							                        </a>
+							                    </li>
+							                    <li role="presentation ">
+							                        <a href="exitUserLands">
+							                            <i class="iconfont icon-jinru"></i> 注销
+							                        </a>
+							                    </li>
+							                </ul>
+							            </li>
+							           
+							        </ul>
+							        <!--管理员结束-->
+                                 
+                            </div>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /navbar -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- 标题栏结束-->
+            <!---插件-->
+            <div style="clear:both;"></div>
+            <!--清除浮动-->
+            <div style="height:300px; width:100%; margin:0 auto 0; margin-top:-58px;">
+                <article class="jq-roll">
+                    <div class="rollad" data-setting='{
+                                "width":1080,
+                                "height":300,
+                                "liWidth":520,
+                                "liHeight":300,
+                                "delay":1000
+                            }'>
+                        <ul class="roll-list">
+                            <li class="roll-item"><img src="images/gimg_1.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_2.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_3.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_4.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_5.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_6.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_7.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="images/gimg_8.jpg" width="100%" height="100%"></li>
+                        </ul>
+                        <div class="roll-btn">
+                            <img src="images/r_left_btn.png" class="roll-prev-btn" />
+                            <img src="images/r_right_btn.png" class="roll-next-btn" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="wz_index_body">
+                <!--中间内容部分-->
+                <!--Left内容-->
+                <div class="wz_index_title">
+                    <div style="clear:both;"></div>
+                    <div class="wz_index_head_one">
+                        <span class="wz_index_head_one_title"><a href="#">热门音乐</a></span> <span class="wz_left"><a href="#">更多》s</a></span>
+                    </div>
+                    <!--开始-->
+                    <div class="wz_margin10">
+                        <div style="text-align:center;" class="wz_picture_set">
+                            <img src="images/images (2).jpg" class="wz_pitture_size">
+                            <a title="HeLLO" href="#"></a>
+                            <div class="button wz_play ">
+                                <a title="Play" href="#">播放</a>
+                                <span class="fui-triangle-right-large wz_music_play"></span>
+                                <span>100万</span>
+                            </div>
+                            <p class="wz_lunwen"><a href="#">[华语] 心如欲望，后土难填</a></p>
+                        </div>
+                        <div class="wz_picture_set">
+                            <img src="images/下载.jpg" class="wz_pitture_size">
+                            <a title="HeLLO" href="#"></a>
+                            <div class="button wz_play ">
+                                <a title="Play" href="#">播放</a>
+                                <span class="fui-triangle-right-large wz_music_play"></span>
+                                <span>100万</span>
+                            </div>
+                            <p class="wz_lunwen"><a href="#">[华语] 心如欲望，后土难填</a></p>
+                        </div>
+                        <div class="wz_picture_set">
+                            <img src="images/下载 (1).jpg" class="wz_pitture_size">
+                            <a title="HeLLO" href="#"></a>
+                            <div class="button wz_play ">
+                                <a title="Play" href="#">播放</a>
+                                <span class="fui-triangle-right-large wz_music_play"></span>
+                                <span>100万</span>
+                            </div>
+                            <p class="wz_lunwen"><a href="#">[华语] 心如欲望，后土难填</a></p>
+                        </div>
+                    </div>
+                    <!--结束-->
+                    <!--开始-->
+                    <div class="wz_margin10">
+                        <div class="wz_picture_set">
+                            <img src="images/images.jpg" class="wz_pitture_size">
+                            <a title="HeLLO" href="#"></a>
+                            <div class="button wz_play ">
+                                <a title="Play" href="#">播放</a>
+                                <span class="fui-triangle-right-large wz_music_play"></span>
+                                <span>100万</span>
+                            </div>
+                            <p class="wz_lunwen"><a href="#">[华语] 心如欲望，后土难填</a></p>
+                        </div>
+                        <div class="wz_picture_set">
+                            <img src="images/下载 (2).jpg" class="wz_pitture_size">
+                            <a title="HeLLO" href="#"></a>
+                            <div class="button wz_play ">
+                                <a title="Play" href="#">播放</a>
+                                <span class="fui-triangle-right-large wz_music_play"></span>
+                                <span>100万</span>
+                            </div>
+                            <p class="wz_lunwen"><a href="#">[华语] 心如欲望，后土难填</a></p>
+                        </div>
+                        <div class="wz_picture_set">
+                            <img src="images/下载 (4).jpg" class="wz_pitture_size">
+                            <a title="HeLLO" href="#"></a>
+                            <div class="button wz_play ">
+                                <a title="Play" href="#">播放</a>
+                                <span class="fui-triangle-right-large wz_music_play"></span>
+                                <span>100万</span>
+                            </div>
+                            <p class="wz_lunwen"><a href="#">[华语] 心如欲望，后土难填</a></p>
+                        </div>
+                    </div>
+                    <!--结束-->
+                    <!--标题栏-->
+                    <div style="clear:both;"></div>
+                    <div class="wz_index_head_one">
+                        <a href="#" class="wz_index_head_one_title">推荐音乐</a></span> <span class="wz_left"><a href="#">更多》</a></span>
+                    </div>
+                    <div style="margin-top:10px; width:95%; margin: 0 auto 0;">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td style="width:10%;">1</td>
+                                    <td class="wz_music_play">
+                                        北京欢迎你
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">2</td>
+                                    <td class="wz_music_play">
+                                        当你
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">3</td>
+                                    <td class="wz_music_play">
+                                        多余的流星
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">4</td>
+                                    <td class="wz_music_play">
+                                        K歌之王
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">5</td>
+                                    <td class="wz_music_play">
+                                        第几个100天
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">6</td>
+                                    <td class="wz_music_play">
+                                        如果你也听说
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">7</td>
+                                    <td class="wz_music_play">
+                                        梦醒时分
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">8</td>
+                                    <td class="wz_music_play">
+                                        So Beautiful
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">9</td>
+                                    <td class="wz_music_play">
+                                        Rags To Rings
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:10%;">10</td>
+                                    <td class="wz_music_play">
+                                        Star Sky
+                                        <span class="fui-triangle-right-large wz_music_play" title="播放"></span>
+                                        <span class="fui-heart" title="喜欢"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--right内容-->
+            <div class="wz_right_part">
+                <div style="width:100%; height:225px;">
+                    <div class="wz_right_part_mysef">
+                        <img src="images/zxx.jpg" height="150" style="float:left;">
+                        <div style="float:left; text-align:center;">
+                            <p><a href="#"> 幸福摩天轮</a></p>
+                            <p class="wz_right_world">Lv.5</p>
+                            <p class="wz_right_world3">已签到</p>
+                        </div>
+                    </div>
+                    <div style="background:#9B9B9B; width:100%; height:75px;">
+                        <div class="wz_right_world2">
+                            <p>0</p>
+                            <p>动态</p>
+                        </div>
+                        <div class="wz_right_world2">
+                            <p>10</p>
+                            <p>关住</p>
+                        </div>
+                        <div class="wz_right_world2">
+                            <p>20</p>
+                            <p>粉丝</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:90%; margin-top:20px;">
+                    <div class="wz_right_world4">
+                        <span style="font-size:20px;"><a>入驻歌手</a></span>
+                        <span class="wz_right_world4_look"><a href="#">查看更多></a></span>
+                    </div>
+                    <div class="wz_right_world4_singer">
+                        <img src="images/zhm.jpg " class="wz_right_world4_singe_pic">
+                        <div style="text-align:center; ">
+                            <p class="wz_right_world4_singe_name">林俊杰</p>
+                            <p>中国流行歌手</p>
+                        </div>
+                    </div>
+                    <div class="row demo-row wz_right_world4_singe_btn">
+                        <a href="#" class="btn btn-block btn-lg btn-primary">申请成为网易音乐人</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div style="clear:both; "></div>
+
+    <!--footer-->
+    <div class="wz_index_footer" style="margin-bottom: 60px">
+        <div style="width:1080px; height:100%; background:#B1A9A9; margin:0 auto 0; ">
+            <div class="wz_index_footer_title">
+                <p class="wz_index_footer_name">微知音乐歌曲招募</p>
+                <p class="wz_index_footer_word">上传音乐，给你不一样的惊喜</p>
+            </div>
+            <div class="wz_index_footer_title">
+                <p class="wz_index_footer_name">音乐人签约</p>
+                <p class="wz_index_footer_word">我们的音乐团队，等待你的加入</p>
+            </div>
+            <div class="wz_index_footer_title">
+                <p class="wz_index_footer_name">关于微知-客服服务 贵州大学 SRT 微知开发项目小组版权所有@2017 Coding Right</p>
+                <p class="wz_index_footer_word"><span class="fui-location "></span>：贵州省贵阳市花溪区贵州大学北校区</p>
+            </div>
+        </div>
+    </div>
+
+    <!--底部的播放栏-->
+   <div style="width:100%; height:90px; position:fixed; bottom: 0;">
+        <div class="grid-music-container f-usn" style="width:1080px; margin:0 auto 0;">
+            <div class="m-music-play-wrap">
+                <div class="u-cover"></div>
+                <div class="m-now-info">
+                    <h1 class="u-music-title"><strong>标题</strong><small>歌手</small></h1>
+                    <div class="m-now-controls">
+                        <div class="u-control u-process">
+                            <span class="buffer-process"></span>
+                            <span class="current-process"></span>
+                        </div>
+                        <div class="u-control u-time">00:00/00:00</div>
+                        <div class="u-control u-volume">
+                            <div class="volume-process" data-volume="0.50">
+                                <span class="volume-current"></span>
+                                <span class="volume-bar"></span>
+                                <span class="volume-event"></span>
+                            </div>
+                            <a class="volume-control"></a>
+                        </div>
+                    </div>
+                    <div class="m-play-controls">
+                        <a class="u-play-btn prev" title="上一曲"></a>
+                        <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                        <a class="u-play-btn next" title="下一曲"></a>
+                        <a class="u-play-btn mode mode-list current" title="列表循环"></a>
+                        <a class="u-play-btn mode mode-random" title="随机播放"></a>
+                        <a class="u-play-btn mode mode-single" title="单曲循环"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="f-cb">&nbsp;</div>
+            <div class="m-music-list-wrap" style="display:none"></div>
+        </div>
+    </div>
+    <script src="dist/js/vendor/jquery.min.js "></script>
+    <script src="dist/js/vendor/video.js "></script>
+    <script src="dist/js/flat-ui.min.js "></script>
+    <script src="docs/assets/js/application.js "></script>
+    <script src="js/jquery.roll-ad.js "></script>
+	
+	 <script src="../bdPlay/src/js/smusic.min.js"></script>
+
+    <script>
+        var musicList = [
+            {
+                title: 'Sugar',
+                singer: 'Maroon 5',
+                cover: 'images/Maroon5.jpg',
+                src: 'G:/CloudMusic/傅许 - 寂静之空.mp3'
+            },
+            {
+                title: '洋葱',
+                singer: '平安',
+                cover: 'images/yangcong.jpg',
+                src: '6039.mp3'
+            },
+            {
+                title: '她说',
+                singer: '张碧晨',
+                cover: 'images/yangcong.jpg',
+                src: '马融 - 一瞬间.mp3'
+            },
+            {
+                title: '海阔天空',
+                singer: 'beyond',
+                cover: 'images/yangcong.jpg',
+                src: '6039.mp3'
+            }
+        ];
+        new SMusic({
+            musicList: musicList
+        });
+    </script>
+	
+    <script>
+        videojs.options.flash.swf = "dist/js/vendors/video-js.swf ";
+    </script>
+
+    <script>
+        RollAd.init($('.rollad'));
+    </script>
+
+    <script>
+        var timer;
+        var obj = document.getElementById('zxx_doo');
+        window.onscroll = function () {
+            clearTimeout(timer);
+            timer = setTime(function () {
+                var scrolltop = document.body.scrolltop || document.documentElement.scrollTop || 0;
+                obj.style.buttom = 0 - scroltop + 'px';
+            }, 300);
+        }
+    </script>
+</body>
+</html>

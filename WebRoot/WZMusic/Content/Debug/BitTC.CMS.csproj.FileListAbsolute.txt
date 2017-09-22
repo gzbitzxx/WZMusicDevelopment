@@ -1,0 +1,6 @@
+G:\第五期实战培训\内容管理系统\内容管理系统\BitTC.CMS\bin\BitTC.CMS.dll
+G:\第五期实战培训\内容管理系统\内容管理系统\BitTC.CMS\bin\BitTC.CMS.pdb
+G:\第五期实战培训\内容管理系统\内容管理系统\BitTC.CMS\obj\Debug\ResolveAssemblyReference.cache
+G:\第五期实战培训\内容管理系统\内容管理系统\BitTC.CMS\obj\Debug\BitTC.CMS.dll
+G:\第五期实战培训\内容管理系统\内容管理系统\BitTC.CMS\obj\Debug\BitTC.CMS.pdb
+G:\第五期实战培训\内容管理系统\内容管理系统\BitTC.CMS\bin\AspNetPager.xml

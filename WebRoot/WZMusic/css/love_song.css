@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+.love_song_body{
+		width:95%; 
+		margin:0 auto 0;
+	}
+.love_song_first{
+	width:30%; 
+	float:left;
+	}
+.love_song_img{
+	width:200px; 
+	height:200px; 
+	float:right;
+	}
+.love_song_right{
+	width:69%; 
+	float:right;
+	}
+.love_song_title{
+	font-size:20px; 
+	font-family:'Lucida Console', Monaco, monospace; 
+	font-weight:bold; 
+	margin-bottom:10px; 
+	margin-top:10px;
+	}
+.wz_music_play1{
+	margin-left:40%;
+	}
+.wz_music_play2{
+	margin-left:35%;
+	}

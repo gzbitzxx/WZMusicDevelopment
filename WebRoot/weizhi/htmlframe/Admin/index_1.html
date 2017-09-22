@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>微知后台管理</title>
+    <link href="../plugings/layui/css/layui.css" rel="stylesheet" type="text/css" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../plugings/bootstrap/css/site.min.css" />
+    <link rel="stylesheet" href="../style/hui.css" />
+</head>
+
+<body>
+    <div class="hui-top-nav">
+        <!-- logo -->
+        <div class="hui-top-nav-logo">
+            微知后台管理
+        </div>
+        <div style="position: absolute;left: 256px;height: 50px;line-height: 50px;">
+            <button class="layui-btn layui-btn-small" style="background: #3BAFDA;" id="hui-top-menu" data-open="true"><i class="iconfont icon-caidan"></i></button>
+        </div>
+        <!--管理员开始-->
+        <ul class="hui-top-nav-right-usr">
+            <li class="dropdown">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#" id="dLabel">
+                    <i class="iconfont icon-touxiang"></i> 雨中回眸
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li role="presentation ">
+                        <a href="#">
+                            <i class="iconfont icon-chakan"></i> 个人信息
+                        </a>
+                    </li>
+                    <li role="presentation ">
+                        <a href="login.html">
+                            <i class="iconfont icon-jinru"></i> 注销
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!--管理员结束-->
+    </div>
+    <div class="hui-left-slide-container">
+        <ul class="hui-slide-menu">
+            <li>
+                <a href="javascript:;" url="echarts.html" tab-id="0">
+                    <i class="iconfont icon-shouye"></i> 统计台
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-web-channel"></i> 音乐类型管理
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="AddMusicType.html" tab-id="1">
+                            添加类型
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" url="MusicTypeList.html" tab-id="10">
+                            类型列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-web-channel"></i> 音乐管理
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="AddMusic.html" tab-id="2">
+                            添加音乐
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" url="MusicList.html" tab-id="11">
+                            音乐列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-web-channel"></i> 文章管理
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="AddArtcle.html" tab-id="3">
+                            添加文章
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" url="ArticleList.html" tab-id="13">
+                            文章列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-web-channel"></i> 评论管理
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="AddComment.html" tab-id="4">
+                            添加评论
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" url="CommentList.html" tab-id="14">
+                            评论列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-web-channel"></i> 管理员管理
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="AddAdmin.html" tab-id="1">
+                            添加管理员
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" url="AdminList.html" tab-id="21">
+                            管理员列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-web-channel"></i> 用户管理
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="echarts.html" tab-id="1">
+                            添加用户
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            用户列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--三级联动的范例开始-->
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-shezhi"></i> 三级菜单
+                    <span class="iconfont icon-iconfontxiangyou"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#">
+                            第三级菜单
+                            <span class="iconfont icon-iconfontxiangyou"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">三级子菜单</a>
+                            </li>
+                            <li>
+                                <a href="#">三级子菜单</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                           三级中的二级
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--三级联动的范例结束-->
+        </ul>
+    </div>
+    <div class="hui-right-container">
+        <div class="layui-tab  layui-tab-card" style="margin-top: 2px;background: whitesmoke;" lay-filter="tab-filter" lay-allowclose="true">
+            <ul class="layui-tab-title" style="background: #FAFAFA;margin: 0px;">
+                <li class="layui-this first">主页</li>
+            </ul>
+            <div class="layui-tab-content" style=" margin-top:5px;padding: 0px;">
+                <div class="layui-tab-item layui-show">
+                    <iframe src="echarts.html" src-id="0" style="width: 100%; border: 0px;" tab-index="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hui-frame-footer">
+        Copyright © 2017 <a href="http://www.yuit.club" target="_blank">YUIT</a> Powered by 雨中回眸
+    </div>
+    <script src="../plugings/layui/layui.js" type="application/javascript"></script>
+    <script src="../plugings/scroll/jquery-2.1.1.min.js" type="application/javascript"></script>
+    <script src="../plugings/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="../js/hui-menu.js" type="application/javascript"></script>
+    <script src="../plugings/scroll/jquery.nicescroll.min.js" type="application/javascript"></script>
+    <script src="../js/main.js" type="application/javascript"></script>
+</body>
+
+</html>
