@@ -199,14 +199,6 @@
 			type="text/javascript"></script>
 		<script src="bdPlay/src/js/smusic.min.js"></script>
 
-		<script>
-			videojs.options.flash.swf = "WZMusic/dist/js/vendors/video-js.swf ";
-		</script>
-
-		<script>
-			RollAd.init($('.rollad'));
-		</script>
-
 		<script type="text/javascript">
 		
 			layui.use([ 'layer', 'laypage' ], function() {
@@ -242,25 +234,25 @@
                 title: '夏天',
                 singer: '李玖哲 ',
                 cover: 'bdPlay/images/lijiuzhe.jpg',
-                src: 'G:/CloudMusic/李玖哲 - 夏天.mp3'
+                //src: 'music/李玖哲 - 夏天.mp3'
             },
             {
                 title: '可乐',
                 singer: '赵紫骅',
                 cover: 'bdPlay/images/yangcong.jpg',
-                src: 'G:/CloudMusic/丽江小倩 - 红蔷薇.mp3'
+                //src: 'music/丽江小倩 - 红蔷薇.mp3'
             },
             {
                 title: '一瞬间',
                 singer: '马融',
                 cover: 'bdPlay/images/marong.jpg',
-                src: 'G:/CloudMusic/马融 - 一瞬间.mp3'
+                //src: 'music/马融 - 一瞬间.mp3'
             },
             {
                 title: '你就不要想起我',
                 singer: '冯提莫',
                 cover: 'bdPlay/images/fentimo.jpg',
-                src: 'bdPlay/夏未至 - 你就不要想起我 - 冯提莫（Cover 田馥甄）.mp3'
+                //src: 'http://localhost:8080/WZMusicDevelopment/bdPlay/1.mp3'
             }
         ];
         new SMusic({
@@ -276,7 +268,6 @@
 				var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
 				var height = Math.max(bHeight, dHeight);
 				iframe.height = height;
-				console.log(height);
 			}catch (ex){}
     	}
     	window.setInterval("reinitIframe()",200);

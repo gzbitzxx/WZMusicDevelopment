@@ -115,7 +115,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     							$(".editW").val("");
     							editor2.txt.html('');
     							parent.layer.closeAll();
-    							window.parent.location.href='getArticle';
+    							parent.location.reload();
     							
     						}else{
     							layer.msg(da[0].details,{icon:2,time:3000});

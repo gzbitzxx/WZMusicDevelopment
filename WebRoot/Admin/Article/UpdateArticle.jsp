@@ -140,8 +140,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				$.post(url, param, function(data) {
 				  
                    if (data == 0) {
+                   	parent.location.reload();
                       parent.layer.closeAll();
-                      window.parent.location.onload;
                    } else if(data==1) {  
                        alert("修改失败！");  
                    }  

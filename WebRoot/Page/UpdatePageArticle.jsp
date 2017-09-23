@@ -96,6 +96,7 @@
   <script src="weizhi/htmlframe/plugings/layui/layui.js" type="text/javascript"></script>
     
     <script type="text/javascript">
+    	<!--这里是回填下拉列表的字段-->
     	window.onload = function() {
     		var uid = document.getElementById("userIdInput").value;
     		var musicInput = document.getElementById("musicSelect");
@@ -146,9 +147,9 @@
     			};
     
     			$.post(url, param, function(data) {
-    
     				if (data == 0) {
-    					parent.layer.closeAll();
+    					layer.closeAll();
+    					
     				} else if (data == 1) {
     					alert("修改失败！");
     				}

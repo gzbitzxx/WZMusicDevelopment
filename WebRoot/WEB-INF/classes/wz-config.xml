@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC 
+	"-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置别名-->
+	<typeAliases>
+	
+		<typeAlias type="com.wz.dto.UserDto" alias="UserDto" />
+		<typeAlias type="com.wz.dao.UserDao" alias="UserDao" />
+		<typeAlias type="com.wz.dao.AdminDao" alias="AdminDao"/>
+		<typeAlias type="com.wz.dto.AdminDto" alias="AdminDto"/>
+		<typeAlias type="com.wz.dao.MusicTypeDao" alias="MusicTypeDao"/>
+		<typeAlias type="com.wz.dto.MusicTypeDto" alias="MusicTypeDto"/>
+		<typeAlias type="com.wz.dto.MusicDto" alias="MusicDto"/>
+		<typeAlias type="com.wz.dao.MusicDao" alias="MusicDao"/>
+		<typeAlias type="com.wz.dto.ArticleDto" alias="ArticleDto"/>
+		<typeAlias type="com.wz.dao.ArticleDao" alias="ArticleDao"/>
+		<typeAlias type="com.wz.dto.CommentsDto" alias="CommentsDto"/>
+		<typeAlias type="com.wz.dao.CommentsDao" alias="CommentsDao"/>
+		
+	</typeAliases>
+	
+	
+	<!-- 配置环境变量 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://127.0.0.1:3306/wz?characterEncoding=GBK" />
+				<property name="username" value="root" />
+				<property name="password" value="123456" />
+				<!--  服务器密码<property name="password" value="zxx123456" />-->
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<!-- 配置mappers -->
+	<mappers>
+		<mapper resource="com/wz/dao/UserDao.xml" />
+		<mapper resource="com/wz/dao/AdminDao.xml" />
+		<mapper resource="com/wz/dao/MusicTypeDao.xml" />
+		<mapper resource="com/wz/dao/MusicDao.xml" />
+		<mapper resource="com/wz/dao/ArticleDao.xml" />
+		<mapper resource="com/wz/dao/CommentsDao.xml" />
+	</mappers>
+	
+</configuration>   

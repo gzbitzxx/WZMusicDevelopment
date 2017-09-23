@@ -135,7 +135,7 @@
 			$(".buttonUpdate").click(function() {
 				var id = $(this).parent().find('input[type="hidden"]').val();
 	
-				windowIndex =parent.layer.open({
+				windowIndex =layer.open({
 					type : 2,
 					title : '修改文章',
 					shadeClose : true,
@@ -144,7 +144,7 @@
 					*/
 					shade : 0.8,
 					maxmin:true,
-					area : [ '70%', '90%' ],
+					area : [ '100%', '90%' ],
 					content : 'updateArticle?id=' + id, //iframe的url
 					/* yes : function(index, layero) {
 						var admin = parent.layer.getChildFrame("form", index);

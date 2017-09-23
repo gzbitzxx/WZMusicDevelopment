@@ -11,7 +11,7 @@
 	<select id="queryMyselfArticles" parameterType="ArticleDto" resultMap="ArticleMap"
 		useCache="false">
 	    <![CDATA[
-		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id and a.userID = #{userDto.id}
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id and a.userID = #{userDto.id} ORDER BY createTime DESC
 		]]>
 	</select>
 	
@@ -44,14 +44,14 @@
 	<select id="getArticles" parameterType="int" resultMap="ArticleMap"
 		useCache="false">
 	    <![CDATA[
-		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id  ORDER BY createTime DESC
 		]]>
 	</select>
 	
 	<select id="getArticlePage" parameterType="com.wz.dto.Page" resultMap="ArticleMap"
 		useCache="false">
 	    <![CDATA[
-		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id limit #{currentPage},#{pageSize}
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id ORDER BY createTime DESC limit #{currentPage},#{pageSize}
 		]]>
 	</select>
 	

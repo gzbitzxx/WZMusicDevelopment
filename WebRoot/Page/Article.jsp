@@ -221,14 +221,6 @@
 		<script src="weizhi/htmlframe/plugings/layui/layui.js"
 			type="text/javascript"></script>
 
-		<script>
-			videojs.options.flash.swf = "dist/js/vendors/video-js.swf ";
-		</script>
-
-		<script>
-			RollAd.init($('.rollad'));
-		</script>
-
 		<script type="text/javascript">
 		
 			var windowIndex;
