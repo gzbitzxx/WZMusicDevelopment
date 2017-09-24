@@ -29,10 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <div class="showbox">
         <form method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label >音乐名称</label><span  class="text_musicName" style="color:#FF0000;size="-2;" ></span>
-                <input type="text" class="form-control musicName" name="musicName" placeholder="音乐名称">
-            </div>
+            
             <div class="form-group">
                 <label >类型名称</label><span  class="text_musicTypeID" style="color:#FF0000;size="-2;" ></span>
                 <br />
@@ -44,10 +41,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     	} 
                     %>
                 </select>
-            </div>
-            <div class="form-group">
-                <label>歌手</label>
-                <input type="text" class="form-control" name="singer" placeholder="歌手">
             </div>
             <div class="form-group">
                 <label >音乐路径</label><span  class="text_path" style="color:#FF0000;size="-2;" ></span>
@@ -83,7 +76,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				    				if(da[0].status!=undefined){
 				    					if(da[0].status==true){
 				    					$("#filepath").val(da[0].details);
-				    					console.log($("#filepath").val());
 				    					$.ajax({
 						    				url:"addMusic",
 						    				type:"POST",
@@ -93,6 +85,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					    						if(da[0].status==true){
     											layer.msg(da[0].details,{icon:1,time:3000});
     											$("input").val("");
+    											$("select").val("1");
     											parent.layer.closeAll();
     											//window.parent.location.reload();
 							    		}else{
@@ -112,49 +105,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						})
     		 });
     		
-    		/*$(".submit").click(function(){
-    			
-    			var musicName=$(".musicName").val();
-    			var musicTypeID=$(".musicTypeID").val();
-    			var path=$(".path").val();
-    			var passwordTrue=$(".passwordTrue").val();
-    			if(musicName==""){
-    				$(".text_musicName").text("请输入音乐名称！");
-    				return ;
-    			}
-    			if(musicTypeID==""){
-    				$(".text_musicTypeID").text("请选择音乐类型！");
-    				return ;
-    			}
-    			if(path==""){
-    				$(".text_path").text("请选择音乐路径！");
-    				return ;
-    			}
-    			
-    			//alert(accoutNumber);
-    			 $.ajax({
-    				url:"addMusic",
-    				type:"POST",
-    				data:$('form').serialize(),
-    				success:function(da){
-    					
-    					if(da[0].status!=undefined){
-    						if(da[0].status==true){
-    							layer.msg(da[0].details,{icon:1,time:3000});
-    							$("input").val("");
-    						}else{
-    							layer.msg(da[0].details,{icon:2,time:3000});
-    						}
-    					}
-    				}
-    				
-    			}); 
-    		});
-    		
-    		$(".reset").click(function(){
-    			$("input").val('');
-    		});
-    		*/
     		
     	});
     </script>

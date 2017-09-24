@@ -158,7 +158,7 @@
     		});
     
     		$(".onsubmit").click(function() {
-    			parent.layer.closeAll();
+    			layer.closeAll();
     		});
     
     

@@ -293,7 +293,7 @@
 				$(".updatePageArticle").click(function() {
 					var id = $(this).parent().find('input[type="hidden"]').val();
 		
-					windowIndex = parent.layer.open({
+					windowIndex =layer.open({
 						type : 2,
 						title : '修改文章',
 						shadeClose : true,

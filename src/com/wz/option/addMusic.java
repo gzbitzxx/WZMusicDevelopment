@@ -16,9 +16,11 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 
 import net.sf.json.JSONArray;
 
+import com.wz.common.TagInfoUtil;
 import com.wz.dto.AdminDto;
 import com.wz.dto.MusicDto;
 import com.wz.dto.MusicTypeDto;
+import com.wz.dto.Tag;
 import com.wz.test.AdminCRUD;
 import com.wz.test.MusicCRUD;
 
@@ -36,11 +38,14 @@ public class addMusic extends BaseServlet {
 		
 		
 		//获取传入的参数
-		String musicName = request.getParameter("musicName");
 		int musicTypeID = Integer.parseInt(request.getParameter("musicTypeID"));
-		String singer = request.getParameter("singer");
 		String path = request.getParameter("filepath");
-				//(String) request.getSession().getAttribute("filePath");
+		
+		Tag tag=TagInfoUtil.Mp3InfoRead(path);
+		TagInfoUtil.getMp3Picture(path);
+		String musicName =tag.getSongName();
+		String singer = tag.getArtist();
+		
 		System.out.println("这厮路径......................................"+path);
 		
 		if(path!=null){

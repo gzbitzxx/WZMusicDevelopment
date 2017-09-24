@@ -74,9 +74,8 @@ public class UploadServlet extends HttpServlet {
 
         // 构造临时路径来存储上传的文件
         // 这个路径相对当前应用的目录
-        String uploadPath ="bdPlay";
+        String uploadPath =request.getSession().getServletContext().getRealPath("") + File.separator + UPLOAD_DIRECTORY;
        
-         
         // 如果目录不存在则创建
         File uploadDir = new File(uploadPath);
         if (!uploadDir.exists()) {

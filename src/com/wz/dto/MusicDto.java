@@ -11,6 +11,7 @@ public class MusicDto {
 	// 音乐名称
 	private String musicName;
 	
+	//音乐路径
 	private String path;
 	
 	public String getPath() {
