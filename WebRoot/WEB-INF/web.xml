@@ -257,6 +257,12 @@
   	<description></description>
   	<servlet-class>com.wz.pageservlet.getSpecialMusic</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>addPageUserServlet</servlet-name>
+  	<display-name>addPageUserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.addPageUserServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping id="ServletMapping_1505961830930">
     <servlet-name>updataNewComment</servlet-name>
@@ -463,6 +469,10 @@
   <servlet-mapping>
   	<servlet-name>getSpecialMusic</servlet-name>
   	<url-pattern>/getSpecialMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addPageUserServlet</servlet-name>
+  	<url-pattern>/addPageUserServlet</url-pattern>
   </servlet-mapping>
   
   <!-- 配置访问的首页 -->

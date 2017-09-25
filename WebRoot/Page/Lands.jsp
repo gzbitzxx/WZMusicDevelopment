@@ -63,13 +63,13 @@
 						</div>
 						
 						<div class="form-group">
-							<span class="login-link">
-								<span  style="width: 48%; float: left;"  >忘记密码？</span>
-								<span  style="width: 48%;float: left;">注册</span>
+							<span style="width: 50%; float: left; text-align: center;">
+								<a href="">忘记密码？</a>
+							</span>
+							<span style="width: 50%; float: left; text-align: center;">
+								<a href="Page/AddPageUser.jsp">注册</a>
 							</span>
 						</div>
-						
-						
 					</div>
 				</div>
 			</div>
@@ -123,13 +123,7 @@
                    	alert("验证码有误！");
                    }  
                });  
-               
-              
-				
 			});
-			
-			
-		
 		});
 	
 	</script>

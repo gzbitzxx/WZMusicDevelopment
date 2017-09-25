@@ -37,7 +37,7 @@
 	UserDto user = (UserDto) s.getAttribute("user");
 	String realName = null;
 	if (user != null) {
-		realName = (String) user.getRealName();
+		realName = (String) user.getAccoutNumber();
 	}
 
 	List<MusicDto> music = (List<MusicDto>) request.getAttribute("music");
@@ -211,7 +211,7 @@
 						type : 2,
 						title : '用户登陆',
 						shadeClose : true,
-						area : [ '420px', '70%' ],
+						area : [ '420px', '420px' ],
 						content : 'Page/Lands.jsp',
 					});
 				});
