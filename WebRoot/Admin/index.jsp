@@ -86,6 +86,24 @@
             </li>
             <li>
                 <a href="#">
+                    <i class="fa fa-plus"></i>自创音乐类型管理
+                  <span class="fa fa-angle-right"></span>
+                </a>
+                <ul class="hui-slide-menu-item">
+                    <li>
+                        <a href="#" url="addMyMusicTypeMU" tab-id="200">
+                            添加我的音乐类型
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" url="listMyMusicType" tab-id="119">
+                            我的音乐类型列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
                     <i class="fa fa-music"></i> 音乐管理
                   <span class="fa fa-angle-right"></span>
                 </a>

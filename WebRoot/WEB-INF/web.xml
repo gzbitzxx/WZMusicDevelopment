@@ -263,6 +263,37 @@
   	<description></description>
   	<servlet-class>com.wz.pageservlet.addPageUserServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>addMyMusicTypeMU</servlet-name>
+  	<display-name>addMyMusicTypeMU</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.addMyMusicTypeMU</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>addMyMusicType</servlet-name>
+  	<display-name>addMyMusicType</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.addMyMusicType</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listMyMusicType</servlet-name>
+  	<display-name>listMyMusicType</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.listMyMusicType</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>deleteMyMusicType</servlet-name>
+  	<display-name>deleteMyMusicType</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.deleteMyMusicType</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>updateMyMusicType</servlet-name>
+  	<display-name>updateMyMusicType</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.option.updateMyMusicType</servlet-class>
+  </servlet>
+
 
   <servlet-mapping id="ServletMapping_1505961830930">
     <servlet-name>updataNewComment</servlet-name>
@@ -473,6 +504,26 @@
   <servlet-mapping>
   	<servlet-name>addPageUserServlet</servlet-name>
   	<url-pattern>/addPageUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addMyMusicTypeMU</servlet-name>
+  	<url-pattern>/addMyMusicTypeMU</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addMyMusicType</servlet-name>
+  	<url-pattern>/addMyMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listMyMusicType</servlet-name>
+  	<url-pattern>/listMyMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>deleteMyMusicType</servlet-name>
+  	<url-pattern>/deleteMyMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateMyMusicType</servlet-name>
+  	<url-pattern>/updateMyMusicType</url-pattern>
   </servlet-mapping>
   
   <!-- 配置访问的首页 -->

@@ -58,7 +58,7 @@
 	<select id="getMyMusicTypes" parameterType="int" resultMap="MyMusicTypeNameMap"
 		useCache="false">
 	    <![CDATA[
-		select * from mymusictype a,music t,user u where a.userID=u.id
+		select * from mymusictype a,user u where a.userID=u.id 
 		]]>
 	</select>
 	

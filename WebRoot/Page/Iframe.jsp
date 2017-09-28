@@ -234,7 +234,7 @@
                 title: '夏天',
                 singer: '李玖哲 ',
                 cover: 'bdPlay/images/lijiuzhe.jpg',
-                //src: 'music/李玖哲 - 夏天.mp3'
+                src: 'music/李玖哲 - 夏天.mp3'
             },
             {
                 title: '可乐',
