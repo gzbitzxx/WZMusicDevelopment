@@ -18,6 +18,8 @@
 		<typeAlias type="com.wz.dao.ArticleDao" alias="ArticleDao"/>
 		<typeAlias type="com.wz.dto.CommentsDto" alias="CommentsDto"/>
 		<typeAlias type="com.wz.dao.CommentsDao" alias="CommentsDao"/>
+		<typeAlias type="com.wz.dto.MyMusicTypeDto" alias="MyMusicTypeDto"/>
+		<typeAlias type="com.wz.dao.MyMusicTypeDao" alias="MyMusicTypeDao"/>
 		
 	</typeAliases>
 	
@@ -44,6 +46,7 @@
 		<mapper resource="com/wz/dao/MusicDao.xml" />
 		<mapper resource="com/wz/dao/ArticleDao.xml" />
 		<mapper resource="com/wz/dao/CommentsDao.xml" />
+		<mapper resource="com/wz/dao/MyMusicTypeDao.xml" />
 	</mappers>
 	
 </configuration>   
