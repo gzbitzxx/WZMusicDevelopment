@@ -32,8 +32,7 @@
 	rel="stylesheet" type="text/css" />
 <%
 	request.setCharacterEncoding("utf-8");
-	HttpSession s = request.getSession();
-	UserDto user = (UserDto) s.getAttribute("user");
+	UserDto user=request.getAttribute("user");
 %>
 
 </head>
@@ -48,6 +47,7 @@
 					<div class="wz_index_head_one">
 						<span class="wz_index_head_one_title"><a href="#"
 							style="text-align:center;margin-left:45%;">个人信息</a></span>
+							<button class="layui-btn addButton" style="float: right;"><i class="iconfont icon-icon48"></i> 修改个人信息 </button>
 					</div>
 					<!--开始-->
 					<div style="width: 95%; margin:0 auto 0;">
@@ -103,15 +103,13 @@
 
 	<script type="text/javascript">
 	
-		var windowIndex;
-	
 		layui.use([ 'layer', 'laypage' ], function() {
 			var $ = layui.jquery,
 				layer = layui.layer,
 				laypage = layui.laypage;
 	
 			$(".buttonDelete").click(function() {
-				windowIndex = layer.open({
+				 layer.open({
 					type : 2,
 					title : '用户登陆',
 					shadeClose : true,
@@ -119,17 +117,37 @@
 					content : 'Page/Lands.jsp',
 				});
 			});
-	
+			
+			$(".addButton").click(function(){
+				var id=<%=user.getId()%>;
+				layer.open({
+					type : 2,
+					title : '修改用户',
+					shadeClose : true,
+					btn : [ '修改', '取消' ],
+					shade : 0.8,
+					area : [ '80%', '100%' ],
+					content : 'updateUser?id=' + id, //iframe的url
+					yes : function(index, layero) {
+						var user = layer.getChildFrame("form", index);
+						$.ajax({
+							url : "updateNewUser?id=" + id,
+							data : user.serialize(),
+							type : "POST",
+							success : function(data) {
+								window.location.reload();
+								layer.close(index);
+							}
+						});
+					},
+					btn1 : function(index, layero) {
+						layer.close(index);
+					}
+				});
+			});
 	
 		});
 	
-	
-		function closeWindow() {
-			if (windowIndex != undefined) {
-				layer.close(windowIndex);
-				window.location.reload();
-			}
-		}
 	</script>
 
 

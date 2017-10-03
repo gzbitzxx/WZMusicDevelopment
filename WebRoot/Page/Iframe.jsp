@@ -98,7 +98,7 @@
 										class="caret"></b>
 								</a>
 									<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-										<li role="presentation "><a href="Page/ShowMyself.jsp"
+										<li role="presentation "><a href="myselfInfo?id=<%=user.getId() %>"
 											target="IndexIframe"> <i class="fa fa-user"></i> 个人信息
 										</a></li>
 										<li role="presentation" class="exitUser"><a

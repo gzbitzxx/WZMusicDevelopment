@@ -53,19 +53,19 @@
                     <div class="rollad" data-setting='{
                                 "width":1080,
                                 "height":300,
-                                "liWidth":520,
+                                "liWidth":700,
                                 "liHeight":300,
-                                "delay":1000
+                                "delay":2000
                             }'>
                         <ul class="roll-list">
-                            <li class="roll-item"><img src="WZMusic/images/gimg_1.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_2.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_3.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_4.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_5.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_6.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_7.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/images/gimg_8.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz1.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz2.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz3.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz1.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz2.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz3.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz2.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz3.jpg" width="100%" height="100%"></li>
                         </ul>
                         <div class="roll-btn">
                             <img src="WZMusic/images/r_left_btn.png" class="roll-prev-btn" />
@@ -265,9 +265,6 @@
     <script src="weizhi/htmlframe/plugings/layui/layui.js"
 		type="text/javascript"></script>
 
-    <script>
-        videojs.options.flash.swf = "WZMusic/dist/js/vendors/video-js.swf ";
-    </script>
 
     <script>
         RollAd.init($('.rollad'));

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.ArticleDao">
+	<select id="queryArticles" parameterType="ArticleDto" resultMap="ArticleMap"
+		useCache="false">
+	    <![CDATA[
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id and a.id = #{id}
+		]]>
+	</select>
+	
+	<select id="queryMyselfArticles" parameterType="ArticleDto" resultMap="ArticleMap"
+		useCache="false">
+	    <![CDATA[
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id and a.userID = #{userDto.id} ORDER BY createTime DESC
+		]]>
+	</select>
+	
+	<resultMap type="com.wz.dto.ArticleDto" id="ArticleMap">
+		<id property="id" column="id"/>
+		<result property="title" column="title"/>
+		<result property="words" column="words"/>
+		<result property="likeNumber" column="likeNumber"/>
+		<result property="createTime" column="createTime"/>
+		<association property="userDto" javaType="com.wz.dto.UserDto">
+			<id property="id" column="userID"/>
+			<result property="accoutNumber" column="accoutNumber"/>
+			<result property="realName" column="realName"/>
+			<result property="loginIP" column="loginIP"/>
+			<result property="password" column="password"/>
+			<result property="sex" column="sex"/>
+			<result property="age" column="age"/>
+			<result property="hobby" column="hobby"/>
+			<result property="brithday" column="brithday"/>
+			<result property="view" column="view"/>
+		</association>
+		<association property="musicDto" javaType="com.wz.dto.MusicDto">
+			<id property="id" column="musicID"/>
+			<result property="singer" column="singer"/>
+			<result property="musicName" column="musicName"/>
+			<result property="path" column="path"/>
+		</association>
+	</resultMap>
+	
+	<select id="getArticles" parameterType="int" resultMap="ArticleMap"
+		useCache="false">
+	    <![CDATA[
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id  ORDER BY createTime DESC
+		]]>
+	</select>
+	
+	<select id="getArticlePage" parameterType="com.wz.dto.Page" resultMap="ArticleMap"
+		useCache="false">
+	    <![CDATA[
+		select * from article a,music t,user u where a.musicID=t.id and a.userID=u.id ORDER BY createTime DESC limit #{currentPage},#{pageSize}
+		]]>
+	</select>
+	
+	<insert id="insertArticle" parameterType="ArticleDto" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO article(id,userID,musicID,words,likeNumber,title,createTime) 
+			VALUES
+			(#{id},#{userDto.id},#{musicDto.id},#{words},#{likeNumber},#{title},#{createTime})
+		]]>
+	</insert>
+	
+	<update id="updateArticle" parameterType="ArticleDto" >
+		update article set userID=#{userDto.id},
+		musicID=#{musicDto.id},words=#{words},
+		likeNumber=#{likeNumber},title=#{title},createTime=#{createTime} where id=#{id}
+	</update>
+	
+	<delete id="delectArticle" parameterType="ArticleDto">
+		delete from article where id=#{id} 
+	</delete>
+</mapper>

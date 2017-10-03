@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper	namespace="com.wz.dao.MyMusicTypeDao">
+	<select id="queryMyMusicTypes" parameterType="MyMusicTypeDto" resultMap="MyMusicTypeMap"
+		useCache="false">
+	    <![CDATA[
+		select * from mymusictype a,music t,user u where a.musicID=t.id and a.userID=u.id and a.id = #{id}
+		]]>
+	</select>
+	
+	<resultMap type="com.wz.dto.MyMusicTypeDto" id="MyMusicTypeMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<association property="userDto" javaType="com.wz.dto.UserDto">
+			<id property="id" column="userID"/>
+			<result property="accoutNumber" column="accoutNumber"/>
+			<result property="realName" column="realName"/>
+			<result property="loginIP" column="loginIP"/>
+			<result property="password" column="password"/>
+			<result property="sex" column="sex"/>
+			<result property="age" column="age"/>
+			<result property="hobby" column="hobby"/>
+			<result property="brithday" column="brithday"/>
+			<result property="view" column="view"/>
+		</association>
+		<association property="musicDto" javaType="com.wz.dto.MusicDto">
+			<id property="id" column="musicID"/>
+			<result property="singer" column="singer"/>
+			<result property="musicName" column="musicName"/>
+			<result property="path" column="path"/>
+		</association>
+	</resultMap>
+	
+	<resultMap type="com.wz.dto.MyMusicTypeDto" id="MyMusicTypeNameMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<association property="userDto" javaType="com.wz.dto.UserDto">
+			<id property="id" column="userID"/>
+			<result property="accoutNumber" column="accoutNumber"/>
+			<result property="realName" column="realName"/>
+			<result property="loginIP" column="loginIP"/>
+			<result property="password" column="password"/>
+			<result property="sex" column="sex"/>
+			<result property="age" column="age"/>
+			<result property="hobby" column="hobby"/>
+			<result property="brithday" column="brithday"/>
+			<result property="view" column="view"/>
+		</association>
+	</resultMap>
+	
+	<select id="queryMyMusicType" parameterType="MyMusicTypeDto" resultMap="MyMusicTypeMap"
+		useCache="false">
+	    <![CDATA[
+		select * from mymusictype a,music t,user u where a.musicID=t.id and a.userID=u.id and a.userID = #{userDto.id}
+		]]>
+	</select>
+	
+	<select id="getMyMusicTypes" parameterType="int" resultMap="MyMusicTypeNameMap"
+		useCache="false">
+	    <![CDATA[
+		select * from mymusictype a,user u where a.userID=u.id 
+		]]>
+	</select>
+	
+	<insert id="insertMyMusicType" parameterType="MyMusicTypeDto" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO mymusictype(id,userID,musicID,name) 
+			VALUES
+			(#{id},#{userDto.id},#{musicDto.id},#{name})
+		]]>
+	</insert>
+	
+	<update id="updateMyMusicType" parameterType="MyMusicTypeDto" >
+		update mymusictype set userID=#{userDto.id},
+		musicID=#{musicDto.id},name=#{name} where id=#{id}
+	</update>
+	
+	<delete id="delectMyMusicType" parameterType="MyMusicTypeDto">
+		delete from mymusictype where id=#{id} 
+	</delete>
+	
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.AdminDao">
+	<select id="queryAdmins" parameterType="AdminDto" resultType="com.wz.dto.AdminDto"
+		useCache="false">
+	    <![CDATA[
+		select * from admin t where t.id = #{id}
+		]]>
+	</select>
+	
+	<select id="getAdmins" parameterType="int" resultType="AdminDto"
+		useCache="false">
+	    <![CDATA[
+		select * from admin where 1=1
+		]]>
+	</select>
+	
+	<!-- 分页 -->
+	<select id="getAdminPage" parameterType="com.wz.dto.Page" resultType="AdminDto"
+		useCache="false">
+	    <![CDATA[
+		select * from admin limit #{currentPage},#{pageSize}
+		]]>
+	</select>
+	
+	<insert id="insertAdmin" parameterType="AdminDto" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO admin(accoutNumber,realName,password,loginIP) 
+			VALUES
+			(#{accoutNumber},#{realName},#{password},#{loginIP})
+		]]>
+	</insert>
+	
+	<update id="updateAdmin" parameterType="AdminDto" >
+		update admin set accoutNumber=#{accoutNumber},
+		realname=#{realName},password=#{password},loginIp=#{loginIP} where id=#{id}
+	</update>
+	
+	<delete id="delectAdmin" parameterType="AdminDto">
+		delete from admin where id=#{id} 
+	</delete>
+</mapper>

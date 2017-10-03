@@ -293,6 +293,12 @@
   	<description></description>
   	<servlet-class>com.wz.option.updateMyMusicType</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>myselfInfo</servlet-name>
+  	<display-name>myselfInfo</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.myselfInfo</servlet-class>
+  </servlet>
 
 
   <servlet-mapping id="ServletMapping_1505961830930">
@@ -524,6 +530,10 @@
   <servlet-mapping>
   	<servlet-name>updateMyMusicType</servlet-name>
   	<url-pattern>/updateMyMusicType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>myselfInfo</servlet-name>
+  	<url-pattern>/myselfInfo</url-pattern>
   </servlet-mapping>
   
   <!-- 配置访问的首页 -->

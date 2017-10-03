@@ -36,9 +36,6 @@ public class addPageArticles extends HttpServlet {
 			request.setAttribute("user", user);
 			request.getRequestDispatcher("Page/AddPageArticle.jsp").forward(request, response);
 		}
-		
-		
-		
 	}
 
 }

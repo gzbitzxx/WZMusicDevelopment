@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.MusicDao">
+	<select id="queryMusics" parameterType="MusicDto" resultMap="MusicDtoResultMap"
+		useCache="false">
+	    <![CDATA[
+		select * from music t where t.id = #{id}
+		]]>
+	</select>
+	
+	<resultMap type="com.wz.dto.MusicDto" id="MusicDtoResultMap">
+		<id property="id" column="id" />
+		<result property="singer" column="singer" />
+		<result property="musicName" column="musicName" />
+		<result property="path" column="path" />
+		<association property="mucicTypeDto" javaType="com.wz.dto.MusicTypeDto">
+			<id property="id" column="musicTypeID"/>
+			<result property="typeName" column="typeName" />
+			<result property="orderNumber" column="orderNumber" />
+		</association>
+	</resultMap>
+	
+	<select id="getMusics" parameterType="MusicDto" resultMap="MusicDtoResultMap"
+		useCache="false">
+	    <![CDATA[
+		select * from music t,musictype mt where mt.id=t.musicTypeID
+		]]>
+	</select>
+	
+		<!-- 分页 -->
+	<select id="getMusicsPage" parameterType="com.wz.dto.Page" resultMap="MusicDtoResultMap"
+		useCache="false">
+	    <![CDATA[
+		select * from music t,musictype mt where mt.id=t.musicTypeID limit #{currentPage},#{pageSize}
+		]]>
+	</select>
+	
+	<insert id="insertMusic" parameterType="MusicDto" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO music(id,musicTypeID,singer,musicName,path) 
+			VALUES
+			(#{id},#{mucicTypeDto.id},#{singer},#{musicName},#{path})
+		]]>
+	</insert>
+	
+	<update id="updateMusic" parameterType="MusicDto" >
+		update music set musicTypeID=#{mucicTypeDto.id},
+		singer=#{singer},musicName=#{musicName} ,path=#{path} where id=#{id}
+	</update>
+	
+	<delete id="delectMusic" parameterType="MusicDto">
+		delete from music where id=#{id} 
+	</delete>
+</mapper>
