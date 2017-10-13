@@ -55,11 +55,17 @@
 					<div class="collapse navbar-collapse" id="navbar-collapse-01">
 						<ul class="nav navbar-nav navbar-left">
 							<li><a href="index" target="IndexIframe">发现音乐</a></li>
+							<%
+								if (realName!= null) {
+							%>
 							<li><a href="Page/Center.jsp" target="IndexIframe">我的音乐</a></li>
+							<%
+								}
+							%>
 							<li><a href="Page/Friends.jsp" target="IndexIframe">朋友</a></li>
 							<li><a href="getArticle" target="IndexIframe">发现文章</a></li>
 							<%
-								if (realName != null) {
+								if (realName!= null) {
 							%>
 							<li><a href="showMyseclfArticle" target="IndexIframe">个人中心</a></li>
 							<%
@@ -240,19 +246,19 @@
                 title: '可乐',
                 singer: '赵紫骅',
                 cover: 'bdPlay/images/yangcong.jpg',
-                //src: 'music/丽江小倩 - 红蔷薇.mp3'
+                src: 'music/丽江小倩 - 红蔷薇.mp3'
             },
             {
                 title: '一瞬间',
                 singer: '马融',
                 cover: 'bdPlay/images/marong.jpg',
-                //src: 'music/马融 - 一瞬间.mp3'
+                src: 'music/马融 - 一瞬间.mp3'
             },
             {
                 title: '你就不要想起我',
                 singer: '冯提莫',
                 cover: 'bdPlay/images/fentimo.jpg',
-                //src: 'http://localhost:8080/WZMusicDevelopment/bdPlay/1.mp3'
+                src: 'http://localhost:8080/WZMusicDevelopment/bdPlay/1.mp3'
             }
         ];
         new SMusic({

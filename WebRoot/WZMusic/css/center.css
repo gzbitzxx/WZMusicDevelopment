@@ -6,13 +6,13 @@
 	float:left;
 	position:fixed;
 	top:0px;
-	min-height:700px;
-	border-left:0.001px #B1A9A9 solid;
+	height:800px;
+	border-left:1px #B1A9A9 solid;
 	}
 #center_right{
 	width:69%;
 	background:rgb(245,245,245);
-	border-right:0.001px #B1A9A9 solid;
+	border-right:1px #B1A9A9 solid;
 	height:800px;
 	float:right;
 	}

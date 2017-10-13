@@ -44,9 +44,9 @@
 						<li class="list-group-item" id="Table_Open"><a>我的音乐<span
 								class="fui-triangle-up"></span></a></li>
 						<li class="list-group-item" id="tongy1"><a
-							href="Page/Lovesong.jsp" target="openIframe">特别喜欢</a></li>
+							href="<%=basePath %>specialMusic" target="openIframe">特别喜欢</a></li>
 						<li class="list-group-item" id="tongy2"><a
-							href="Page/Recent.jsp" target="openIframe">最近</a></li>
+							href="<%=basePath %>recentMusic" target="openIframe">最近</a></li>
 						<li class="list-group-item" id="tongy3"><a href="javaascript:;">轻音乐</a></li>
 						<li class="list-group-item" id="tongy4"><a href="javaascript:;">摇滚</a></li>
 					</ul>
@@ -56,7 +56,7 @@
 				<!--right begin-->
 				<div id="center_right">
 					<iframe name="openIframe" style="width:100%; min-height:100%;"
-						src="Page/Lovesong.jsp"></iframe>
+						src="<%=basePath %>specialMusic"></iframe>
 				</div>
 				<!--right begin-->
 			</div>

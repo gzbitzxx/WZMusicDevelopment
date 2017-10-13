@@ -299,6 +299,18 @@
   	<description></description>
   	<servlet-class>com.wz.pageservlet.myselfInfo</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>specialMusic</servlet-name>
+  	<display-name>specialMusic</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.specialMusic</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>recentMusic</servlet-name>
+  	<display-name>recentMusic</display-name>
+  	<description></description>
+  	<servlet-class>com.wz.pageservlet.recentMusic</servlet-class>
+  </servlet>
 
 
   <servlet-mapping id="ServletMapping_1505961830930">
@@ -534,6 +546,14 @@
   <servlet-mapping>
   	<servlet-name>myselfInfo</servlet-name>
   	<url-pattern>/myselfInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>specialMusic</servlet-name>
+  	<url-pattern>/specialMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>recentMusic</servlet-name>
+  	<url-pattern>/recentMusic</url-pattern>
   </servlet-mapping>
   
   <!-- 配置访问的首页 -->

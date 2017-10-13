@@ -55,17 +55,19 @@
                                 "height":300,
                                 "liWidth":700,
                                 "liHeight":300,
-                                "delay":2000
+                                "delay":1000
                             }'>
                         <ul class="roll-list">
                             <li class="roll-item"><img src="WZMusic/wzimage/wz1.jpg" width="100%" height="100%"></li>
                             <li class="roll-item"><img src="WZMusic/wzimage/wz2.jpg" width="100%" height="100%"></li>
                             <li class="roll-item"><img src="WZMusic/wzimage/wz3.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz5.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz6.jpg" width="100%" height="100%"></li>
                             <li class="roll-item"><img src="WZMusic/wzimage/wz1.jpg" width="100%" height="100%"></li>
                             <li class="roll-item"><img src="WZMusic/wzimage/wz2.jpg" width="100%" height="100%"></li>
                             <li class="roll-item"><img src="WZMusic/wzimage/wz3.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/wzimage/wz2.jpg" width="100%" height="100%"></li>
-                            <li class="roll-item"><img src="WZMusic/wzimage/wz3.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz5.jpg" width="100%" height="100%"></li>
+                            <li class="roll-item"><img src="WZMusic/wzimage/wz6.jpg" width="100%" height="100%"></li>
                         </ul>
                         <div class="roll-btn">
                             <img src="WZMusic/images/r_left_btn.png" class="roll-prev-btn" />
