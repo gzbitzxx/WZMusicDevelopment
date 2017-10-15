@@ -15,7 +15,7 @@ public class VerificatCode {
 	private int height;//图片高度
 	private int width;//图片长度
 	private Font font;//设置图片字体及大小
-	private int interfere=550;//设置干扰线的数量
+	private int interfere=5;//设置干扰线的数量
 	private String[] str={"a","b","c","d","e","f","g","h",
 						  "i","j","k","m","n","p","s","t",
 						  "u","v","w","x","y","z","2",
@@ -64,7 +64,7 @@ public class VerificatCode {
 		Random random=new Random();
 		//设置背景色
 		//g.setColor(getRanColor(200, 250));
-		g.setColor(new Color(95,188, 161));
+		g.setColor(new Color(255,255, 255));
 		//画一个实心的长方形，作为背景
 		g.fillRect(0, 0, width, height);
 		//设置字体

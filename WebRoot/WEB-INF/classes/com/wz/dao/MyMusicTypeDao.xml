@@ -23,12 +23,6 @@
 			<result property="brithday" column="brithday"/>
 			<result property="view" column="view"/>
 		</association>
-		<association property="musicDto" javaType="com.wz.dto.MusicDto">
-			<id property="id" column="musicID"/>
-			<result property="singer" column="singer"/>
-			<result property="musicName" column="musicName"/>
-			<result property="path" column="path"/>
-		</association>
 	</resultMap>
 	
 	<resultMap type="com.wz.dto.MyMusicTypeDto" id="MyMusicTypeNameMap">
@@ -51,7 +45,7 @@
 	<select id="queryMyMusicType" parameterType="MyMusicTypeDto" resultMap="MyMusicTypeMap"
 		useCache="false">
 	    <![CDATA[
-		select * from mymusictype a,music t,user u where a.musicID=t.id and a.userID=u.id and a.userID = #{userDto.id}
+		select * from mymusictype a,user u where a.userID=u.id and a.userID = #{userDto.id}
 		]]>
 	</select>
 	
@@ -64,15 +58,14 @@
 	
 	<insert id="insertMyMusicType" parameterType="MyMusicTypeDto" useGeneratedKeys="true" keyProperty="id">
 		<![CDATA[
-			INSERT INTO mymusictype(id,userID,musicID,name) 
+			INSERT INTO mymusictype(id,userID,name) 
 			VALUES
-			(#{id},#{userDto.id},#{musicDto.id},#{name})
+			(#{id},#{userDto.id},#{name})
 		]]>
 	</insert>
 	
 	<update id="updateMyMusicType" parameterType="MyMusicTypeDto" >
-		update mymusictype set userID=#{userDto.id},
-		musicID=#{musicDto.id},name=#{name} where id=#{id}
+		update mymusictype set userID=#{userDto.id},name=#{name} where id=#{id}
 	</update>
 	
 	<delete id="delectMyMusicType" parameterType="MyMusicTypeDto">

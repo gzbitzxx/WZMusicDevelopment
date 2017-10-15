@@ -32,7 +32,8 @@
 	rel="stylesheet" type="text/css" />
 <%
 	request.setCharacterEncoding("utf-8");
-	UserDto user=request.getAttribute("user");
+	HttpSession s = request.getSession();
+	UserDto user = (UserDto) s.getAttribute("user");
 %>
 
 </head>

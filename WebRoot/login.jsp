@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+	<link rel="shortcut icon" href="WZMusic/img/favicon.ico">
   </head>
   
   <body style="background:url('weizhi/htmlframe/imgs/login-bg.jpg');background-size: 100%;">

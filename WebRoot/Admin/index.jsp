@@ -13,6 +13,7 @@
 	href="weizhi/htmlframe/plugings/bootstrap/css/site.min.css" />
 <link rel="stylesheet"
 	href="weizhi/htmlframe/plugings/bootstrap/css/bootstrap.min.css" />
+<link rel="shortcut icon" href="WZMusic/img/favicon.ico">
 <link rel="stylesheet"
 	href="weizhi/htmlframe/iconfont/font-awesome-4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="weizhi/htmlframe/style/hui.css" />

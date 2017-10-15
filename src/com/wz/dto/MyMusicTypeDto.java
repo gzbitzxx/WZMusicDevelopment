@@ -1,15 +1,12 @@
 package com.wz.dto;
 
-import javax.xml.crypto.Data;
-
 public class MyMusicTypeDto {
 	//编号
 	private int id;
 	
+	//我的音乐类型名
 	private String name;
 	
-	//音乐实体
-	private MusicDto musicDto;
 	
 	//用户实体
 	private UserDto userDto;
@@ -27,12 +24,7 @@ public class MyMusicTypeDto {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public MusicDto getMusicDto() {
-		return musicDto;
-	}
-	public void setMusicDto(MusicDto musicDto) {
-		this.musicDto = musicDto;
-	}
+	
 	public UserDto getUserDto() {
 		return userDto;
 	}
@@ -41,8 +33,9 @@ public class MyMusicTypeDto {
 	}
 	@Override
 	public String toString() {
-		return "MyMusicTypeDto [id=" + id + ", name=" + name + ", musicDto=" + musicDto + ", userDto=" + userDto + "]";
+		return "MyMusicTypeDto [id=" + id + ", name=" + name + ", userDto=" + userDto + "]";
 	}
+	
 	
 	
 
